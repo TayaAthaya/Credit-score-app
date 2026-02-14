@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 import pickle
 
 model = pickle.load(open('model_pinjaman.pkl', 'rb'))
@@ -56,18 +54,3 @@ if st.button("Cek Kelayakan Pinjaman"):
     else:
 
         st.error("Mohon maaf, Pinjaman Anda kemungkinan DITOLAK. ❌")
-
-st.write("---")
-st.subheader("Analisis Faktor Penentu Prediksi")
-
-feature_importance = pd.DataFrame({
-    'Faktor': columns,
-    'Tingkat Kepentingan': model.feature_importances_
-}).sort_values(by='Tingkat Kepentingan', ascending=False)
-
-
-fig, ax = plt.subplots()
-sns.barplot(x='Tingkat Kepentingan', y='Faktor', data=feature_importance, ax=ax, palette='viridis')
-st.pyplot(fig)
-
-st.write("Grafik di atas menunjukkan faktor mana yang paling dipertimbangkan oleh AI dalam mengambil keputusan.")
