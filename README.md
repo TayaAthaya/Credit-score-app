@@ -4,7 +4,8 @@ Proyek ini bertujuan untuk membangun model klasifikasi yang dapat memprediksi st
 
 ## Link Aplikasi
 
-Aplikasi web ini dapat diakses secara publik melalui tautan berikut: [https://credit-score-app-9eufarm5jay3dhy2hbeev4.streamlit.app/]
+Aplikasi web ini dapat diakses secara publik melalui tautan berikut: 
+[https://credit-score-app-9eufarm5jay3dhy2hbeev4.streamlit.app/]
 
 ## Ringkasan Proyek
 
@@ -52,6 +53,3 @@ streamlit run app.py
 
 
 
----
-
-Draf ini sudah terlihat seperti dokumentasi teknis standar. Apakah ada detail teknis tertentu yang ingin kamu pertajam lagi di dalamnya?
